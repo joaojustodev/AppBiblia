@@ -27,6 +27,7 @@ function reqApi(bookName, chapter) {
                 let versesText = verses[i]
                 console.log(versesText.text)
                 let li = document.createElement('li')
+                li.className = 'verses'
 
                 content.appendChild(book)
                 content.appendChild(chapter)
