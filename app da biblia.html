@@ -6,33 +6,40 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- STYLE SHEET CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- AXIOS -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- JQUERY -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <style>
-    .verses {
-      font-size: 1.080em;
-      font-style: italic;
-      font-weight: 500;
-      padding: 5px;
-
-    }
-  </style>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <h1 class='display-4 text-center'>App Bíblia</h1>
+  <h1 class='display-4 text-center' id='title'>App Bíblia</h1>
 
   <div class='container'>
     <div class='row'>
+      <div class='col-sm-2'>
+          <div class="form-group">
+              <label>Selecione a versão: </label>
+              <select class='form-control' id='version'>
+                <option value="" selected></option>
+                <option value='acf'>ACF - Almeida Corrigida Fiel</option>
+                <option value='nvi'>NVI - Nova Versão Internacional</option>
+              </select>
+            </div>
+          </div>
       <div class='col-sm-6'>
         <div class="form-group">
           <div class="form-group">
             <label for="">Selecione o livro</label>
-            <select class="form-control" name="bookName" id="bookName">
+            <select class="form-control" id="bookName">
+              <option value='' selected></option>
               <option value='gn'>Genesis</option>
               <option value='ex'>Êxodo</option>
               <option value='lv'>Levítivo</option>
@@ -107,21 +114,20 @@
 
       <div class='col-sm-4'>
         <div class="form-group">
-          <label for='capNumber'>Digite Capítulo: </label>
-          <input type="number" name="capNumber" id="capNumber" class="form-control" placeholder="Capítulo">
-          <small class="text-muted">Exemplo: 23</small>
+          <label>Capítulos: </label>
+          <select class='form-control' id='capNumber'></select>
         </div>
       </div>
     </div>
 
-    <button class='btn btn-warning' type='button' onclick="searchBibleBook()">Buscar</button>
+    <button class='btn btn-warning' type='button' id='btnSearch'>Buscar</button>
 
   </div>
 
   <div class='container border mt-5' id='content'></div>
 
   <!-- Optional JavaScript -->
-  <script src='./js/app_biblia3.js'></script>
+  <script src='./js/main.js'></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

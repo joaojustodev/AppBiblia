@@ -1,0 +1,12 @@
+li {
+      font-size: 1.080em;
+      font-style: italic;
+      font-weight: 500;
+      padding: 5px;
+
+    }
+
+li:hover {
+   background:#ccc;
+ }
+
