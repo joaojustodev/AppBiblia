@@ -12,6 +12,11 @@ nesta nova versão as funções se transforam em Classes adquirindo o paradigma 
 todas essas classes foram atribuidos a scripts diferente e importados em um script principal para ser compilado para outro script e se adequar
 aos navegadores Web!
 
+## API
+
+A API utilizado neste projeto é a [bibleAPI](https://bibleapi.co/) | RESTful API da Bíblia, feita por [Márcio Vinícius Sena](https://github.com/marciovsena).
+
+
 ## Layout
 
 Algumas coisas no layout foi modificado como na página principal que há algumas considerações e créditos ao criador da API a qual utilizo
