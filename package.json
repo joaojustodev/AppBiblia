@@ -6,7 +6,7 @@
   "author": "joaobr200 <joaoarantesjob@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode=development --watch --config webpack.config.js"
+    "dev": "webpack --mode=development --watch --config webpack.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
