@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>App Bíblia</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- STYLE SHEET CSS -->
+  <link rel="stylesheet" type="text/css" href="../src/css/style.css">
+  <!-- JQUERY -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-warning">
+      <div class='container'>
+        <a href='#'><img src='../src/assets/logo.png'></a>
+
+      </div>
+    </nav class="navbar">
+  </header>
+
+  <section id='pageContent'>
+    <div class='container mt-5'>
+      <div class='row'>
+        <div class='col-md-6'>
+          <h1>Leia a Bíblia</h1>
+          <hr>
+          <ul>
+            <li>Site fictício desenvolvido por João Vitor Justo Arantes, Busque por livros da bíblia e seus respectivos
+              capítulos e também por versículos específicos e aleátorios.</li>
+
+            <li>Para mais informações de como foi o desenvolvimento desse site, visite meu perfil no GitHub <a
+                target="_blank" href='https://github.com/joaobr200/AppBiblia'>JoaoBR200.</a></li>
+
+            <li>Meus agradecimentos e créditos ao criador da <a target="_blank"
+                href='https://bibleapi.co/'>BibleAPI</a>,
+              <a target="_blank" href="https://github.com/marciovsena">Márcio Vinícius Sena</a>.</li>
+          </ul>
+        </div>
+
+        <div class='col-md-6'>
+          <img class='img-fluid' src='../src/assets/book_reading.png'>
+        </div>
+      </div>
+  </section>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-2'>
+        <div class="form-group">
+          <label>Versão: </label>
+          <select class='form-control' id='version'>
+            <option value='acf'>ACF - Almeida Corrigida Fiel</option>
+            <option value='nvi'>NVI - Nova Versão Internacional</option>
+          </select>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="">Selecione o livro</label>
+            <select class="form-control" id="bookName">
+              <option value='' selected></option>
+              <option value='gn'>Genesis</option>
+              <option value='ex'>Êxodo</option>
+              <option value='lv'>Levítivo</option>
+              <option value='nm'>Números</option>
+              <option value='dt'>Deuteronômio</option>
+              <option value='js'>Josué</option>
+              <option value='jz'>Juízes</option>
+              <option value='rt'>Rute</option>
+              <option value='1sm'>1 Samuel</option>
+              <option value='2sm'>2 Samuel</option>
+              <option value='1rs'>1 Reis</option>
+              <option value='2rs'>2 Reis</option>
+              <option value='1cr'>1 Crônicas</option>
+              <option value='2cr'>2 Crônicas</option>
+              <option value='ed'>Esdras</option>
+              <option value='ne'>Neemias</option>
+              <option value='et'>Ester</option>
+              <option value='job'>Jó</option>
+              <option value='sl'>Salmos</option>
+              <option value='pv'>Provérbios</option>
+              <option value='ec'>Eclesiastes</option>
+              <option value='ct'>Cânticos de Salomão</option>
+              <option value='is'>Isaías</option>
+              <option value='jr'>Geremias</option>
+              <option value='lm'>Lamentações de Geremias</option>
+              <option value='ez'>Ezequiel</option>
+              <option value='dn'>Daniel</option>
+              <option value='os'>Oséias</option>
+              <option value='jl'>Joel</option>
+              <option value='am'>Amós</option>
+              <option value='ob'>Obadias</option>
+              <option value='jn'>Jonas</option>
+              <option value='mq'>Miquéias</option>
+              <option value='na'>Naum</option>
+              <option value='hc'>Habacuque</option>
+              <option value='sf'>Sofonias</option>
+              <option value='ag'>Ageu</option>
+              <option value='zc'>Zacarias</option>
+              <option value='ml'>Malaquias</option>
+              <option value='mt'>Matheus</option>
+              <option value='mc'>Marcos</option>
+              <option value='lc'>Lucas</option>
+              <option value='jo'>João</option>
+              <option value='at'>Atos</option>
+              <option value='rm'>Romanos</option>
+              <option value='1co'>1 Coríntios</option>
+              <option value='2co'>2 Coríntios</option>
+              <option value='gl'>Gálatas</option>
+              <option value='ef'>Efésios</option>
+              <option value='fp'>Filipenses</option>
+              <option value='cl'>Colossenses</option>
+              <option value='1ts'>1 Tessalonicenses</option>
+              <option value='2ts'>2 Tessalonicenses</option>
+              <option value='1tm'>1 Timóteo</option>
+              <option value='2tm'>2 Timóteo</option>
+              <option value='tt'>Tito</option>
+              <option value='fm'>Filemom</option>
+              <option value='hb'>Hebreus</option>
+              <option value='tg'>Tiago</option>
+              <option value='1pe'>1 Pedro</option>
+              <option value='2pe'>2 Pedro</option>
+              <option value='1jo'>1 João</option>
+              <option value='2jo'>2 João</option>
+              <option value='3jo'>3 João</option>
+              <option value='jd'>Judas</option>
+              <option value='ap'>Apocalipse</option>
+
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-sm-4'>
+        <div class="form-group">
+          <label>Capítulos: </label>
+          <select class='form-control' id='capNumber'></select>
+        </div>
+      </div>
+    </div>
+
+    <button class='btn btn-warning' type='button' id='btnSearch'>Buscar</button>
+
+  </div>
+
+  <div class='container border mt-5' id='content'>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="./src/js/bundle.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
