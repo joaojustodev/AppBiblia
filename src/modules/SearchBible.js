@@ -18,6 +18,11 @@ export class SearchBible {
     this.btnSearch.onclick = () => this.addBible();
   }
 
+  scrollToContent() {
+    const contentScrollHeight = this.content.scrollWidth;
+    window.scroll(0, contentScrollHeight * 2);
+  }
+
   async addBible() {
     if (this.book.value === "" || this.chapter.value === "") {
       return;
@@ -77,5 +82,6 @@ export class SearchBible {
         ol.appendChild(li);
       }
     });
+    this.scrollToContent();
   }
 }

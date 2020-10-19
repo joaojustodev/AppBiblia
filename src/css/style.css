@@ -1,7 +1,11 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gabriela', 'Rubik'
+  font-family: "Gabriela", "Rubik";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -11,11 +15,10 @@ h2 {
 }
 
 .verses {
-  font-size: 1.080em;
+  font-size: 1.08em;
   font-style: italic;
   font-weight: 500;
   padding: 5px;
-
 }
 
 li {
