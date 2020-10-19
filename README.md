@@ -31,3 +31,13 @@ com a mudança do script atribuindo novos paradigmas facilitou bastante o tratam
 Caso o usuário tiver alguma problema com a requisição uma page de erro sera renderizado com algumas soluções e motivos que possa ter ocorrido esse erro!
 
 ![Página de erro](https://github.com/joaobr200/AppBiblia/blob/master/.github/erro_page.png)
+
+## Instalação
+
+```sh
+  $ cd AppBiblia
+
+  $ yarn
+
+  $ yarn dev
+```
