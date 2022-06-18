@@ -2,7 +2,7 @@
 
 App de busca de livros da bíblia através de uma API.
 
-![AppBíblia](https://github.com/joaobr200/AppBiblia/blob/master/.github/search_bible.png)
+![AppBíblia](https://raw.githubusercontent.com/joaobr200/AppBiblia/master/.github/search_bible.png)
 
 ## O que mudou ?
 
