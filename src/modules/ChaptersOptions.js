@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default $(document).ready(function () {
   axios
-    .get("https://bibleapi.co/api/books/")
+    .get("https://www.abibliadigital.com.br/api/books")
     .then(function (r) {
       $("#bookName").change(() => {
         let bookName = $("#bookName").val();
