@@ -22,5 +22,5 @@ export default $(document).ready(function () {
       });
     })
 
-    .catch((error) => error);
+    .catch((error) => console.log(error));
 });
