@@ -20,7 +20,7 @@ export class SearchBible {
 
   scrollToContent() {
     const contentScrollHeight = this.content.scrollWidth;
-    window.scroll(0, contentScrollHeight * 2);
+    window.scroll(0, contentScrollHeight / 2);
   }
 
   async addBible() {
